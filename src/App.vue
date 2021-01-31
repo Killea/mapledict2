@@ -25,13 +25,6 @@
         >
           Search
         </el-button>
-        <el-button
-          type="primary"
-          @click="searchSelected()"
-          style="margin-left:10px"
-        >
-          Test
-        </el-button>
       </div>
     </div>
 
@@ -82,8 +75,11 @@
 </template>
 
 <script>
+
 export default {
-  components: {},
+  components: {
+
+  },
   data() {
     return {
       star: 0,
@@ -101,7 +97,7 @@ export default {
   methods: {
     searchSelected() {},
     search() {
-      this.lookup(this.myWord);
+      console.log(this.myWord);
     },
     menuRead() {},
     onClick(text) {
